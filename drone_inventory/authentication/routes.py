@@ -22,7 +22,7 @@ def signup():
 
             flash(f'You have successfully created a user account {email}', 'user-created')
 
-            return redirect(url_for('site.home'))
+            return redirect(url_for('auth.home'))
 
     except:
         raise Exception('Invalid Form Data: Please Check your form')
